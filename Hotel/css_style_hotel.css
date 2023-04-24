@@ -1,0 +1,247 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* utility classuud */
+
+        .btn {
+            display: inline-block;
+            font-size: 16px;
+            color: rgb(209, 196, 178);
+            background: #373636;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .btn-light {
+            background-color:rgb(208, 192, 173);
+            color: #222222;
+            margin-top: 20px;
+        }
+        .bg-dark {
+            background-color: #333;
+            color: bisque;
+        }
+        .bg-light {
+            background: rgb(237, 235, 235);
+            color: #333;
+        }
+        .bg-primary {
+            background-color: rgb(230, 174, 70);
+            color: #333;
+           
+        }
+          
+        .btn:hover {
+            background: rgb(203, 154, 65);
+            color: #444;
+        }
+        .text-primary {
+            color: rgb(211, 140, 7);
+        }
+        .lead {
+            font-size: 18px;
+           margin: 20px 0;
+        }
+        .container {
+            margin: auto;
+            max-width: 1100px;
+            overflow: auto;
+            padding: 0 20px;
+            /* overflow: auto; backgroundtai holbootoi hj ugch bn */
+         /* container maani huudsnii urguniig tohiruulj ugluu */
+        }
+        .clr {
+            clear: both;
+        }
+        .l-heading {
+            font-size: 40px;
+            line-height: 1.2;
+            /* line-height hj ugsnuur delgets nariishd text hoorndoo naaldaad bsniig zaslaa */
+        }
+        /* Padding - haana ch ashiglaj bolohuits padding */
+        .py-1 { padding: 10px 0;}
+        .py-2 { padding: 20px 0;}
+        .py-3 { padding: 30px 0;}
+        /* ingej bichj ugsnuur index dre div dotroo bicheed paading hj boldg, bg-light shg. So tus burt n padding hj ughgui amar */
+
+/* Undsen styles */
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+#showcase, #hotel-info p {
+    color: bisque;
+}
+/* Tsesnii styles */
+#navbar {
+    background: #333;
+    color: bisque;
+    overflow: auto;
+}
+#navbar a {
+    color: bisque;
+}
+#navbar .logo {
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+ #navbar ul li {  /* dahiad float: left hj ugch hevtee tenhlegt oruulj bn */
+    float: left;
+}
+#navbar ul li a { 
+    /* display:block hj ugsnuur margin bln padding hj ugch bolno */
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+/* a.current maani idevhtei bgaa tsonhiig todorch hargdhd tuslana. class el uchraas tseg tavina */
+#navbar ul li a:hover, #navbar ul li a.current{
+    background: #444;
+    color: rgb(202, 140, 26);
+}
+#showcase {
+    padding-top: 70px;
+height: 600px;
+background: url(./image-1/20191201_32showcase.jpg) no-repeat center center/cover;
+text-align: center;
+}
+#showcase .showcase-content {
+font-size: 30px;
+color:bisque;
+
+}
+#showcase .showcase-content p {
+    padding: 40px 0;
+
+}
+#showcase .showcase-content button {
+padding: 10px 20px;
+}
+/* Info part */
+#hotel-info {
+height:100%;
+}
+#hotel-info .info-img {
+    float: left;
+    width: 50%;
+    background: url(./image-1/20191201_32photo-1.jpg) no-repeat center center/cover;
+    min-height: 100%;
+}
+#hotel-info .info-text {
+    float:right;
+    width: 50%;
+    height: 100%;
+    /* min-height hj ugsnuur sunaj bagasgahd buten zurag hargdna. hargdh bdal bol dutuu jijg hesg n hargddg  */
+    text-align: center;
+    padding: 40px;
+    overflow: hidden;
+    /* overflow:hidden bl ter jijig durvuljin dotr scroll bar gargaj irehgui uudnees hj ugsn */
+}
+.info-text p {
+    font-size: 14px;
+    padding: 20px 0;
+}
+.box {
+    float: left;
+    width: 33%;
+    padding: 50px;
+    /* hamgiin deer box-sizing:border-box gj bichj ugsn n 33% dr 50px maani nemgdhgui bolgj bgaa ym/ niit urgun n heveeree bgaad dotr n elementee joohn shahah maygaar hdg */
+    text-align: center;
+}
+.box i {
+    margin-bottom: 15px;
+}
+/* About-info heseg */
+
+#about-info, .info-right {
+float: right;
+width: 50%;
+min-height: 100%;
+}
+/* zurgaa buten haruulahiin tuld tohirgoo hh hergtei teghgu bl scroll bar aar hoish uragsh guilgeh hergtei bolj bn */
+#about-info, .info-right img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    /* border-radius: 50%; gevl circle boldg */
+}
+/* zurag bl inline element mun huudsnii gold ntr bairluulhd uchraas display:block bolgh hergtei */
+#about-info, .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+
+#main-footer {
+    background: #373636;
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    /* padding: 20px; gd hiigeed ugsn jn top n hudluhgui niiltsen bval boxuuddaa float hiisnees bolsn bh. So clr attribute hj ugh hergtei deer */
+}
+#comments {
+    height: 100%;
+    background: url(./image-1/20191201_32test-bg.jpg) no-repeat center center/cover;
+    padding-top: 100px;
+}
+#comments h2 {
+    color: beige;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#comments .comment img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#comments .comment {
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    opacity: 0.8;
+    /* opacity: 0 bis 1 utgatai - tsaana bgaa zurgiig transparent hargduuldg */
+}
+/* Contact form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(227, 218, 218);
+}
+/* textareag select hj ughuur huree n tsenhr boldg uuniig arikgahiin tuld suido selector ashiglaj :focus gej bichne */
+#contact-form input:focus 
+#contact-form textarea:focus {
+    outline: none;
+border-color: rgb(10, 172, 64);
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+/* browser dr huudsiig 2 tiish n sungahd el.uud maani haash yaash sunaad bval tohiromjgui bdg. Container dotr hiij ugh hergtei ghdee container dotr buh el.uudee hj bohgui ylanguya background hj bolhgui. background maani jijgseh ayultai. background huudsaa duurgeed buhleeree bj bh ystoi bs bsn bran dree bairshaad bj bh ystoi  */
+
+/* * - buh utga gesn utgatai */

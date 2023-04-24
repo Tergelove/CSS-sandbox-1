@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbos basics</title>
+    <style>
+#container {
+    /* ingej display:flex bolgosnoor hevtee bln bosoo tenhlegiin daguu dotrh itemuudiig zergtsuulh bolomjtoi blno. Mun default utgaar hevtee tenhlegt zergtsuullt hiigddg / display:row ghde display:flextei adilhn hevtee tenhlgt align hiidg. But display:flex hgeed ugtsn uchraas davhrduulj bichh shaardlgagui*/
+    display: flex;
+    /* flex-direction: row; hevtee tenhlgiin daguu */
+    /* flex-direction: row; */
+    /* display: column; bosoo tenhlgiin daguu align hiilee */
+    
+    /* flex-direction: row-reverse;  float-right shg baruun tal ruu hevtee tenhlgt align hiine ghdee item3 item2 item1 gesn zuunees baruun chigleld bairshine. */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* flex-flow: nowrap; or flex-flow: row nowrap; gevl butsaad scroll bartai boljn - */
+}
+/* 2 itemiin ehniihiig n selectlehiin tuld suido classiin First-child ashiglay. flex:2 gej tavisnaar ehnii item 66.6% havitsaa urgun ezlene. */
+.item:first-child {
+    flex: 1;
+}
+
+.item {
+    background: rgb(239, 236, 236);
+    border: #ccc 1px solid;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    /* flex: 1; browseriin tsonhnii hemjeend taaruulj itemuudiig duurgej bairluuldg */
+    flex: 1;
+    margin: 0.7rem;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--  id="container" style dotr #containert n display propertyd n flex hj ugsvl ene container maani flex container bolj huvirna bs dotrh el.uud n flex itemuud bolj huvirna/ container id d style hj ugh ystoi. Mun boc class list bn uu bugd hamaagui flex item bolno-->
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    <div class="item"><h3>item 1</h3> </div>
+    <div class="item"><h3>item 2</h3> </div>
+    <div class="item"><h3>item 3</h3> </div> 
+    </div>
+</body>
+</html>
+<!-- flex-wrap: wrap; - Neg egneend 12s deesh item bolood ireheer zaavl aragsh scroll bar hiij harh boldg. uuniig wrap hj ugsnuur tuhain hargdj bui delgetsnd taaruulj iluu hesgiig dood mur ruu shiljuulj bolno. -->
+<!-- flex-flow: row wrap;- flex-direction boln flex-flow iig tovchilj bichj ugh bolomjiig olgono. Wrap bl 12s deesh items bgaa tohioldld ajillana gdgiig sana. Mun dandaa tsugt n ashigladggui. ihenh tohioldld tus tusd ashiglvl tohirmjtoi uy zunduu gardg-->

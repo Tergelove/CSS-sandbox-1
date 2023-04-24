@@ -1,0 +1,171 @@
+* {
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8rem;
+}
+/* Utility */
+.text-primary {
+    color: green;
+}
+.bg-light {
+    color: white;
+}
+.bg-dark {
+    background: #444
+}
+a {
+    text-decoration:none;
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.m-heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 1.1;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    padding: 1rem 2rem;
+    background: rgb(26, 147, 26);
+    border-radius: 3px;
+    border: none;
+    margin-top: 1rem;
+}
+li {
+    list-style: none;
+}
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+.btn-dark {
+    background: #333;
+}
+.bg-primary {
+    background: rgb(69, 157, 69);
+}
+/* navbar */
+#navbar {
+    display: flex;
+   position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+ #navbar ul { 
+     display: flex;
+     align-items: center;
+     list-style: none;
+}
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+    background-color: rgb(54, 146, 54);
+    border-radius: 3px;
+}
+/* header-showcase */
+#showcase {
+    background: url(./2_img/20200322_38showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+/* Section- What do we do */
+
+#what .items {
+  display: flex; 
+  padding: 1rem;
+}
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+#what .items .item i {
+    background: rgb(26, 147, 26);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/* who are we */
+#who {
+    display: flex;
+    color: white;
+    line-height: 1.8;
+}
+#who div {
+    /* 2 tentsuu huvaahiin tuld div flex:1 hj ugnu */
+    flex: 1;
+}
+#who .who-text {
+    padding: 2rem;
+    
+}
+#who .who-img {
+background: url(./2_img/20200322_38people.jpg) no-repeat center center/cover;
+}
+/* our partners */
+#client .container .logos {
+    display: flex;
+    margin: 0.5rem;
+}
+#client .logos img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    justify-content: space-evenly;
+}
+/* Contact us */
+#contact {
+    display: flex; 
+}
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+#contact .form-group label {
+    display: block;
+}
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact .btn {
+    width: 100%;
+}

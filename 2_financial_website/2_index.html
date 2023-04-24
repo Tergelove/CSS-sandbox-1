@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c4e4c3b5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="2_style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="2_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="2_widescreen.css">
+    <title>Platinum financial</title>
+</head>
+<body id="home">
+<nav id="navbar" class="bg-light bg-dark">
+    <h1 class="logo">
+        <span class="text-primary">
+            <i class="fas fa-book-open"></i> Platinum</span> finance</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#what">Service</a></li>
+                <li><a href="#who">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+</nav>
+<!-- showcase -->
+<header id="showcase">
+    <div class="showcase-content bg-light">
+        <h1 class="l-heading">There is no limit to your oportunity</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam odio rerum, odit animi laboriosam. Asperiores, culpa alias id iste quam officiis nihil nam quidem?</p>
+        <button class="btn"><a href="#what"></a>Read more</button>
+    </div>
+</header>
+<!-- what do we do? -->
+
+<section id="what">
+    <div class="container">
+        <h2 class="m-heading text-center">What<span class="text-primary"> do</span> we do?</h2>
+        <div class="items">
+     <div class="item">
+        <i class="fa-sharp fa-solid fa-university fa-3x"></i>
+        <div><h3>Investment</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia.</p>
+        </div></div>
+     <div class="item">
+        <i class="fa-sharp fa-solid fa-book-open fa-3x"></i>
+        <div><h3>Financial advice</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia.</p>
+        </div></div>
+     <div class="item">
+        <i class="fa-sharp fa-solid fa-pencil fa-3x"></i>
+        <div><h3>Training</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia.</p>
+        </div></div></div>
+    </div>
+</section>
+<!-- who are we -->
+<section>
+<div id="who">
+    <div class="who-img"></div>
+    <div class="who-text bg-dark">
+        <h3 class="m-heading"><span class="text-primary">Who</span> are we?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab, praesentium maiores omnis veritatis veniam quaerat vitae similique eum! Deserunt?</p>
+        <h1>Leading team</h1>
+        <ul class="list">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+    </div>
+</div>
+</section>
+<!-- our partners -->
+    <div id="client">
+        <div class="container">
+        <h3 class="m-heading text-center"><span class="text-primary">Our</span> partners</h3>
+    
+    <div class="logos bg-light p-1">
+        <div><img src="./2_img/20200322_38logo1.png" alt="logo-1"></div>
+        <div><img src="./2_img/20200322_38logo2.png" alt="logo-2"></div>
+        <div><img src="./2_img/20200322_38logo3.png" alt="logo-3"></div>
+        <div><img src="./2_img/20200322_38logo4.png" alt="logo-4"></div>
+        <div><img src="./2_img/20200322_38logo5.png" alt="logo-5"></div>
+    </div>
+    </div>
+    </div>
+    <!-- contact us -->
+    <section id="contact">
+        <div class="contact-form bg-primary p-1">
+            <h2 class="m-heading">Contact us</h2>
+            <p>Fill out the form and contact us</p>
+       <form>
+        <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name" placeholder="Write down your name"> 
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Write down your email"> 
+            </div>
+            <div class="form-group">
+                <label for="number">Phone number</label>
+                <input type="number" name="number" id="number" placeholder="Write down your number"> 
+            </div>
+            <div class="form-group">
+                <label for="name">Message</label>
+                <textarea name="Message" id="Message"  placeholder="Send your message"></textarea> 
+            </div>
+            <button type="submit" class="btn btn-dark">Send</button>
+        </form>
+    </div>
+    <div class="map">
+    </div>
+    </section>
+    <script src="2_main_js.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnfUVDhBRSZowG1ISzq2MIpLg3hVUsc5Y&callback=initMap&v=weekly"
+    defer
+    ></script>
+    <footer class="bg-dark p-1 text-center bg-light">
+        <p>&copy; 2019, Platinum Finance, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

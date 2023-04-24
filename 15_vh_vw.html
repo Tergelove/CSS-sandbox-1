@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    header {
+        background: #333 url(./image-1/20191201_32showcase.jpg) no-repeat center center/cover;
+        color: antiquewhite;
+        /* height: 100%; gej bichej ugsn ch background buheldee dark bg bolhgui. body n buheldee browseriijn tsonhiig ezelj bdg gej anduurdg. But bodynd uur ymr elementuud bn teriigee toirch background tavigddg*/
+        height: 100vh; 
+        /* hargdh bdlasahamaarch tomrch jijgerne. 50vh gej tavibl tal ghdee tomrch jijgerne */
+        text-align: center;
+        padding: 2rem;
+        padding-top: 15rem;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        margin: 1rem 0;
+    }
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    /* media query hiihees umnu iphone x dr uztel header h3 p ntr maaani yg centert bairlahgui ontsgui hargdj bsn. max-height n 450px ees deesh bolvl which means hevtuulbl padding-top n 5rem bolood butsaagaad bosgohoor 15rem bolno */
+    @media(max-height: 450px) {
+        header {
+            padding-top: 5rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio exercitationem molestias distinctio libero temporibus, dolorem maxime dolore porro itaque odio error rerum accusantium nisi, ut beatae voluptatibus possimus repellendus.</p>
+        <a href="#" class="btn">More info</a>
+    </header>
+
+    <section>
+        <h3>Our Company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perferendis nobis eaque qui mollitia vitae eos maxime explicabo quae soluta aut voluptas odit repellat veritatis unde totam neque magnam animi quod alias necessitatibus aliquid ipsam? Alias accusantium vero commodi minus, libero ab totam error quos et laudantium? Molestias, earum in!</p>
+        <!-- section nemj ugsn ch ar taliin backgroundtai ymar ch hamaaralgui. Tomoohn zuragtai landing page uudiig vh or vw ashiglan hiivel tohiromjtoi. dood taliin elementuudiig zgr scrolldood harchihna -->
+
+    </section>
+</body>
+</html>

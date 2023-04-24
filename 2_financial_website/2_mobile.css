@@ -1,0 +1,54 @@
+@media(max-width: 500px) {
+#navbar {
+    flex-direction: column;
+    align-items: center;
+}
+#navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+#navbar .ul {
+padding: 0.2;
+}
+#showcase .showcase-content {
+    top: 100px;
+}
+#who {
+    display: block
+}
+#who .who-img {
+    display: none;
+}
+#client .logos img {
+    width: 80%;
+}
+/* div:last-child {display: none; - hamgiin suuliin logo alga bolno*/
+#client .logos div:last-child {
+    display: none;
+}
+#contact {
+    flex-direction: column;
+}
+/* #contact {
+    display: block;
+}
+#contact .map {
+    display: none;
+} */
+.m-heading {
+    font-size: 1.5rem;
+}
+}
+#what .items {
+    display: block;
+    padding:1rem;
+}
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+#what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}

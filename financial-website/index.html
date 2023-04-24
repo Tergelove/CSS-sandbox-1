@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c4e4c3b5f.js" crossorigin="anonymous"></script>
+    <!-- Undsen css file aa mediaqueryniihee deer gargj tavisnaar mediaquery overright hj ugnu -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="Mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="widescreen.css">
+   
+    <title>Platinum financial / Санхүү ба Хөрөнгө оруулалт</title>
+
+</head>
+
+<!-- bodyndoo id hj ugsnuur tsesn dr darhd tuhain menuruu userch ochuulh ystoi -->
+<body id="home">
+    <!-- Undsen tses -->
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary">
+                <i class="fas fa-book-open"></i> Platinum 
+            </span>finance
+        </h1>
+        <ul>
+            <!-- #home gj bichsneer home menu dr darhd home tses ruu usreh hergtei -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">Service</a></li>
+            <li><a href="#who">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="showcase">
+            <div class="showcase-content">
+                <h1 class="l-heading" >There is no limit to our oportunity</h1>
+                <p class="lead" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat ut maiores numquam nostrum et recusandae praesentium illo minima animi.</p>
+                <a class="btn" href="#what">Read more</a>
+            </div>
+    </header>
+<!-- What do we do? -->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+        <h2 class="m-heading text-center" >What <span class="text-primary">do</span> we do?</h2>
+   
+        <div class="items">
+            <div class="item">
+            <i class="fa-sharp fa-solid fa-university fa-3x"></i>
+            <div><h3>Investment</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, laboriosam.</p></div></div>
+
+            <div class="item">
+            <i class="fa-sharp fa-solid fa-book-reader fa-3x"></i>
+            <div><h3>Financial advice</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, laboriosam.</p></div></div>
+            
+            <div class="item">
+            <i class="fa-sharp fa-solid fa-pencil fa-3x"></i>
+            <div><h3>Training</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, laboriosam.</p></div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- who are we? -->
+    <section>
+        <div id="who">
+            <div class="who-img"></div>
+            <div class="who-text bg-dark p-2">
+                <h3 class="m-heading"><span class="text-primary">Who</span> are we?</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ad ea cum, possimus, impedit iste odit laudantium similique rerum accusantium labore corporis voluptas illo nostrum.</p>
+                <h1>Leading team</h1>
+            <ul class="list">
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>    
+            </div>
+        </div>
+        <!-- our clients -->
+    </section>
+    <div id="client" class="py-1">
+        <div class="container">
+            <h3 class="m-heading text-center"><span class="text-primary">Our</span> partners</h3>
+        <div class="logos bg-light">
+            <div><img src="./img/20200322_38logo1.png" alt="logo-1"></div>
+            <div><img src="./img/20200322_38logo2.png" alt="logo-2"></div>
+            <div><img src="./img/20200322_38logo3.png" alt="logo-3"></div>
+            <div><img src="./img/20200322_38logo4.png" alt="logo-4"></div>
+            <div><img src="./img/20200322_38logo5.png" alt="logo-5"></div>
+        </div>
+       </div>
+    </div>
+    <!-- contact us -->
+<section id="contact">
+   <div class="contact-form bg-primary p-1">
+    <h2 class="m-heading">Conatct us</h2>
+    <p>Fill out the form and contact us</p>
+<form>
+   <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Write down your name">
+   </div>
+   <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Write down your email">
+   </div>
+   <div class="form-group">
+    <label for="phone-number">Phone number</label>
+    <input type="phone-number" name="phone-number" id="phone-number" placeholder="Write down your phone number">
+   </div>
+   <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="3" placeholder="Send your message"></textarea>
+   </div>
+   <button type="submit" class="btn btn-dark">Send</button>
+  <!-- <input type="submit" value="Send" class="btn"> ingej hj ugch bs blno-->
+</form>
+</div>
+<!-- Google map install -->
+<div class="map"></div>
+</section>
+<!-- javascriptiin file iig link hj ugnu, zurag oruulj ughtei adil sourceiig n zaaj ugdg. Mun js dr external code bichij ugdg tusd n -->
+<script src="Main_js.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnfUVDhBRSZowG1ISzq2MIpLg3hVUsc5Y&callback=initMap&v=weekly"
+      defer
+    ></script>
+<!-- footer -->
+<footer class="bg-dark text-center">
+    <p>&copy; 2019, Platinum Finance, All Rights Reserved</p>
+</footer>
+    
+</body>
+</html>
+<!-- Hamgiin deed tald nav bar iig showcase nees tusd n hj ugnu. if not deesh guilgehd hamtdaa alga bolchno. So nav bar doosh scroll hsn ch uldeh ystoi -->
+<!-- AIzaSyCnfUVDhBRSZowG1ISzq2MIpLg3hVUsc5Y - ene codeiig script el iin key=ard place -->

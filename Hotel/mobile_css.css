@@ -1,0 +1,53 @@
+#navbar .logo {
+    float: none;
+    text-align: center;
+}
+#navbar ul, #navbar ul li {
+    float: none;
+}
+#navbar ul li a {
+    padding: 3px;
+    border-bottom: #444 dotted 1px;
+    /* Ene deerh 3 navbar hj ugsnuur mobile device dr delgets nariisch jijgerhd doosh tsuvarsn menu bono.
+    hotel index dr shine link nemj ugsn - <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile_css.css">*/
+}
+/* showcase */
+#showcase {
+    height: 100%;
+}
+#showcase .showcase-content {
+    color: bisque;
+    line-height: 1;
+    padding-bottom: 30px;
+
+}
+/* hotel info */
+/* hotel inf hesgt 2 daraallsn zurgtai hesgt delgets maani 768px s bagash uyd hotel infonii texttei hesg n zuvhn hargdhaar hy */
+#hotel-info .info-img {
+    display: none;
+}
+#hotel-info .info-text {
+    float:none;
+    width: 100%; 
+}
+/*  boxes */
+.box {
+    float: none;
+    width: 100%;
+}
+/* abou info */
+#about-info, .info-right,
+#about-info, .info-left {
+    float: none;
+    width: 100%;
+}
+#about-info, .info-right {
+    margin-top: 30px;
+}
+.l-heading {
+text-align: center;
+}
+/* Contact info */
+#contact-info .box {
+    border-bottom: #444 dotted 1px;
+}

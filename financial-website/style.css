@@ -1,0 +1,202 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0.75rem 0;
+  }
+  /* Utility class's style */
+  .container {
+max-width: 1100px;
+margin: auto;
+padding: 0 2rem;
+overflow: hidden;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+  
+  .text-primary {
+    color: rgb(8, 156, 8);
+  }
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    background-color: green;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: rgb(125, 187, 33);
+}
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.bg-dark {
+  background: #333;
+  color: white;
+}
+.bg-primary {
+  background: rgb(116, 191, 86);
+}
+.list {
+  list-style: none;
+  margin: 0.5rem;
+}
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 1px dotted;
+}
+
+  /* Main menu */
+#navbar {
+    /* display:flex utga zaavl hj ugh ystoi */
+    display: flex;
+    /* position: sticky; top: 0; scroll hsn ch hevndee deer hargdna*/
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+
+}
+#navbar ul {
+display: flex;
+align-items: center;
+list-style: none;
+}
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+    background-color:  rgb(8, 156, 8);
+    border-radius: 5px;
+}
+/* Showcase */
+#showcase {
+    background: #333 url(./img/20200322_38showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; justify-content: center; align-items: center; height: 100%; ene 4g hj ugsnuur text gollono mun page getting small and bigger text yg gold n l brlana. height:100% gj hj ugsn uchir*/
+    height: 100%;
+    padding: 0 2rem;
+/* overlay - ariin font zurag het tod text maani sn hargdhgui bgaa uchir overlay effect hne so positioniig absolute bolgh ystoi */
+position: absolute;
+/* zuun bln deed tal ruu tulgaj bn left, bottom, right: 0; harin top: 60px; gesn n deed taliin navbar aas bolsn/ ingej hj ugsnuur page duuren overlay bolno */
+top: 60px;
+left: 0;
+bottom: 0;
+right: 0;
+/* rgb + alpha buyu a nemeed ariin zurgiig transparent bolgj boldg. opacity bol buhii l bichg usegtei n tsairuuldg bolhr responsive bish. */
+background: rgba(0,0,0,0.6);
+}
+/* Section - What do we do? */
+#what .items {
+  display: flex;
+  padding: 1rem; 
+}
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+#what .items .item i {
+  background: rgb(80, 185, 80);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* section - Who are we? */
+#who {
+  display: flex;
+  color: white;
+  line-height: 1.5;
+}
+#who div {
+  /* 2 div flex itemuudaa yg tentssu hemjeetei bolgh uudnees flex:1 gj hj ugnu. So tus tusd n width hj ugh shaardlgagui */
+  flex: 1;
+}
+#who .who-img {
+  background: url(./img/20200322_38people.jpg) no-repeat center center/cover;
+}
+/* Our partner */
+#client .container .logos {
+ display: flex;
+}
+#client .logos img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+/* Contact us */
+#contact {
+  display: flex;
+}
+#contact .map, #contact .contact-form { 
+  /* flex:1 hj ugsnuur  */
+  flex: 1;
+}
+ #contact .contact-form .form-group { 
+  margin: 0.75rem;
+}
+#contact .form-group label {
+  display: block;
+}
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  #contact .btn {
+    width: 100%;}
+  

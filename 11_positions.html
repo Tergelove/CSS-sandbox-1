@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    /* position zaaval relative bh ystoi, bcs parent el. uchraas */
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #333;
+    /* Hervee tom container boxoo hudulguud uzvl top: 50px; tavij uzej blno*/
+}
+#box-1 {
+    /* relative utgatai bolgosnoor tblr n uuriinh n undsn brshilaas hamaarch nuluuldg */
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    /* z-index: 1 gdg n red box maani tom boxnii araar orsn tul naash n tataj gargaj ireh hergtei- ih utga 2 3 gh met tavih tusam naash oirtno */
+    background: red;
+    
+}
+#box-2 {
+    /* tom saaral boxniihoo bairshlaas hamaaraad hudulj bn */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background: greenyellow;
+}
+#box-3 {
+position: absolute;
+right: 100px;
+bottom: 100px;
+    background: purple;
+}
+
+#box-4 {
+    /* positioniig fixed bolghde blue box hadagdaj yg ter bran dree uldne gesn ug. ghdee browser dr ter zai n hoosn gesn utgatai uchraas orange box deesh zai ruu n orsn. scroll hiihd blue box hudluhgui */
+    position: fixed;
+
+    background: blue;
+}
+#box-5 {
+    /* sticky position fixedtei tustei bolovch zogsoohgiig hussn gazraa zogsooj boldg */
+    position: sticky;
+    top: 20px;
+    /* top: 0px gj bichj ugsnuur scroll hiigeed deesh guilgesn ch delgetsiin deer ochood ulddg */
+    background: orange;
+    z-index: -1;
+    /* z-index: -1; gj bichj ugsnuur blue boxiin araar ornoo */
+}
+/* anhndaa edgeer 5uulgniih n position n  5ulaa static (default utga) gesn utgatai bgaa */
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+
+    <div class="container">
+        <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+    </div>
+    
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+    
+</body>
+</html>
+<!-- box maani anhndaa static -->
+<!-- fixed position bl advertisemnt dr ih ashiglagddg scroll hiihd bnga hargddg uchraas -->

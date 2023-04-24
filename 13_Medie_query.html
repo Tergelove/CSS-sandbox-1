@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Media queries</title>
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: grey;
+        color: antiquewhite;
+        text-align: center;
+        padding: 100px; 
+    }
+/* odoo tuhain delgetsnd n taarh l ym bol heading n hargddg code bichj ugy */
+h1 {
+    display: none;
+}
+
+    /* Smartphones */
+
+    /* hervee tom delgetsnd zoriulj hiivel min-wídth hj ugdg */
+   @media(max-width: 500px) {
+    body {
+        
+        background: orange;
+    }
+    /* zuvhn smartphoned zoriulsn uchraas hervee 800px ees deesh bolvl smartphone bish bn gj uzeed tgd hargdhgui bolno. 
+    tmees ene code false bn gj uzeed deed taliin code ajillana */
+    #smartphone h1 {
+    display: block;
+   }
+   }    
+   
+    /* Tablet */
+
+    /* hervee tom delgetsnd zoriulj hiivel min-woídth hj ugdg. Hervee utsn dr neg uur tablet n dr bs uuruur 
+    hh bol min:width hj ugdg */
+    @media(min-width: 501px) and (max-width: 768px) {
+    body { background: blue;}
+    #tablet h1 {
+    display: block;}
+    /* 801px ees deesh bolvl blue bolood tablet gdg bichg garj irne. bagasvl smartphone bs red bg tai bolno */
+   }    
+
+    /* normal */
+    @media(min-width: 769px) and (max-width: 1200px) {
+    body { background: green;}
+    #normal h1 {
+    display: block;}
+   }   
+
+    /* widescreen */
+    @media(min-width: 1201px) and (max-width: 1500px) {
+    body { background: purple;}
+    #widescreen h1 {
+    display: block;}
+   }    
+    /* landscape - utas tablet zergiig hevtuulehd urgun bish undriig n tohiruulj ugh ystoi*/
+    @media(max-height: 500px) {
+    body { background: yellowgreen;}
+    #landscape h1 {
+    display: block;}
+   }    
+</style>
+<link rel="stylesheet" media="screen and (max-width:768px)" href="#">
+<!-- media="screen and (max-width:768px)" ingej hj ugsnuur max-width n 768s deeshgui device
+dr hh ystoi mun dees hetrvel ene file link duudagdhgui gesn ug.  -->
+<!-- ene linkee styleiinhaa door main hesgtee taviad ugvl ygr bdg -->
+
+<body>
+    <div id="widescreen"><h1>Widescreen</h1></div>
+    <div id="normal"><h1>normal</h1></div>
+    <div id="tablet"><h1>tablet</h1></div>
+    <div id="smartphone"><h1>smart phone</h1></div>
+    <div id="landscape"><h1>landscape</h1></div>
+    </div>
+</body>
+</html>
+<!-- Turshilt test hj bh uydee internal css bichvel zugeer uurchlluudee shuud haraad yvchihna -->
+<!-- google chrome iin developer tools dotr toggle device tool bar dr daraad utas uu anfroid uu ipad uu gdgee harj shalgaj boldg-->
+<!-- media query d zoriulj tusdaa css stylesheet neej boldg -->

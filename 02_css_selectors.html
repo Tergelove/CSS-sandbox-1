@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Body styling - body nii styleg buheld n uurchlnu */
+        /* Element selector */
+
+        body {
+            background-color: #333;
+
+        }
+        /* # buyu id nemjugsnuur id aar select hiih bolomjtoi. h2 g delete hiisn ch utgad uurchllt orhgui */
+        /* . bol classd zoriulagdsn */
+        .primary-heading {
+            color: green; 
+        }
+        /* # bol id d zoriulagdsn */
+        #welcome {
+            background-color: grey;
+        }
+        /* multiple selectors */
+        #welcome, #about {
+            border: 1px solid yellowgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* Nested selectors - ymar neg id elementiin dotr bgaa zuiliin styleiig uurchlnu */
+        #welcome p {
+            font-size: 20px;
+            /* zuvhn div dotrh id tai paragraphiin font size iig 20px bolgj tomruulna, 16px bl default bdg ghdee */
+        }
+        #about {
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At saepe ex, esse mollitia aspernatur aperiam! Corrupti magnam modi fuga omnis.</p>
+    </div>
+    <div id="about">
+        <h2>Bidnii tuhai</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem possimus molestias in nam officia.</p>
+
+    </div>
+</body>
+</html>
+<!--  2 h2 iin negiig n green ungutei bolghiig husvel id attributeiig ashiglna. Ingehdee h2 dotroo <h2 id="green-heading">Welcome</h2> gej nemj uguud deer style dotroo # buyu id nemjugnu <style>
+        h2#green-heading {
+            color: green;
+        }  uunii dra h2 gedgee hassn ch uurchllt garhgui. Id aar select hiih bolomjtoi -->
+        <!-- Deerh purple-heading iig uur gazr ashiglah bolomjgui uchraas class iig ashiglna class iig . eer temdegledg  -->
+        <!-- class boln id gaa zuv uyn hatan nerleh hergtei bcs coloriig blue ch ymuu uurchlhd purple-heading gdg nershil tohiroljgui. tiim uchraas  -->

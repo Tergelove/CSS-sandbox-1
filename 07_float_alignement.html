@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and alignment</title>
+    <style>
+        * {
+            /* door paddingni hemjee nemgdeed bga uchraas nemj ugch bn */
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+
+        }
+
+        .container {
+            /* width: 960px gej tuhain textiin urguniig 2 talaas n tentsuu todrhoilno, gevch jijig tablet bln handy dr bagasgahd buten hargdhgui zaavl scroll bar ashiglan hoisho guilgej harh hergtei boldg */
+            /* tiimees max-width: 960px gej hiij ugvl ymar ch asuudalgui buheldee text maani hargdna */
+            max-width: 960px;
+            margin: 30px auto;
+            /* margin: auto; bichj ugsnuur yg center dree ochno, 30px n top bottom talaasaa 30px gesn ug */
+
+        }
+        .clr { 
+            clear: both;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        
+            
+        }
+        .box p {
+            /* text alignment */
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+        #box-2 {
+            float: left;
+            width: 68%;
+
+
+        }
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+    </style>
+   
+</head>
+<body>
+    <!-- web browser dr orood harhd yg tuvd n bish bval tuhain textee yg center dr n avaachhiig husvl class="container" gesn el div shineer neegeed tuhain textee bugdiig n dotr n oruulna, tgd style neeged .container -->
+    <div class="container">
+        <div id="box-1" class="box">
+        <h3>garchig 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quibusdam pariatur neque aut quasi error sequi repellat ab aspernatur voluptatem!</p>
+    </div>
+        <div id="box-2" class="box">
+        <h3>garchig 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quibusdam pariatur neque aut quasi error sequi repellat ab aspernatur voluptatem!</p>
+    </div>
+        <div id="box-3" class="box">
+        <h3>garchig 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quibusdam pariatur neque aut quasi error sequi repellat ab aspernatur voluptatem!</p>
+       
+    </div>
+
+    <!-- end clr tei class aa duudaj ugnu so 2 bln 3r boxoos salangad boldg -->
+    <div class="clr"></div>
+
+
+        <div id="box-4" class="box">
+        <h3>garchig 4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quibusdam pariatur neque aut quasi error sequi repellat ab aspernatur voluptatem!</p>
+       
+    </div>
+    </div>
+    
+</body>
+</html>
+<!-- float iig meddeg bh ystoi umnu n hergledg bsn ghde ih tuvugtei odo harin flex box, css creed ashigladg bolsn -->

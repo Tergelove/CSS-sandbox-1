@@ -1,0 +1,54 @@
+#what .items {
+    display: block;
+    padding: 1rem;
+}
+
+/* iconuudiig zuun tal ruu align hh */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+/* iconii bairshil */
+#what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+/* smartphone */
+@media(max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #navbar ul {
+        padding: 0.2;
+    }
+    /* umnu n delgets urgun bh uyd navbariin background arai nariihn bsn. top: 60px gd ugsn bsn ch smartphone dr navbar bg iluu urgun bolsn uchir showcase iin ariin zurgiin transparency n dutaj hargdj bn */
+    #showcase .showcase-content {
+        top: 100px;
+    }
+    /* img text 2 ih nariinhn hargdj bgaa uchir zurgiig alga bolgy */
+    #who {
+        display: block;
+    }
+    #who .who-img {
+        display: none;
+    }
+    /* logo */
+    #client .logos img {
+        width: 80%;
+    }
+    #client .logos div:last-child {
+        display: none;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .m-heading {
+        font-size: 1.5rem;
+    }
+}

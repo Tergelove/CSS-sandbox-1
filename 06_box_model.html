@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and padding</title>
+    <style>
+        /* CSS reset */
+        * {
+            /* ingej bichj ugvl buh bichsn el css nar butsaad default utgatai boldg */
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+            /* box-sizing nemj ugsnuur zuvhn width 600px iin box heveeree buh talaasaa 120ps pqaddingtai hargduulna */
+        }
+        .box {
+            background: #f4f4f4;
+            border: 2px #777 solid;
+            width: 600px;
+            /* padding on all sides- ygr dan padding bval buh tald n adilhn padding avna gesn utgatai, so must tell the measure and where*/
+            /* if we change width of box, padding will add on it - it is not good  */
+
+  /* margin on all sides */
+            padding: 20px;
+
+            /* margin 4 sides - respectively */
+            margin-top: 30px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
+            /* can be shortened - top right bottom left - daraall n */
+
+            padding: 10px 20px 10px 20px;
+          
+            margin: 20px;
+        }
+
+        /* garchig text hoorndoo nileen oirhn bsn uchir padding 10px hj zaitai bolgosn */
+        .box h3 {
+padding-bottom: 10px;
+        }
+        .box p {
+            margin: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>hairtsag 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis vero est placeat ab inventore iusto, pariatur sint quis nam quaerat.</p>
+    </div>
+    <div class="box">
+        <h3>hairtsag 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis vero est placeat ab inventore iusto, pariatur sint quis nam quaerat.</p>
+    </div>
+
+</body>
+</html>
+<!-- .box gej bichhd automatisch class garj irne  -->
+<!-- box model bl 4 davhargaas burddg. -->
+<!-- herev tuhain ugudul dr darhd sharaar todrch hargdval ter n margin g haruulj bgaa
+jishee n paragraphiin margin 0px bolghd ulbar shar margin huree bhgui boldg  -->

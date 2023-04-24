@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline and block</title>
+    <style>
+li {
+    display: inline;
+}
+li a { 
+    padding-right: 20px;
+}
+img { 
+    display: block;
+    margin:auto;
+}
+
+.box { 
+    /* display:inline gesn chn faildlee bcs inline el.d width bln margin tohiruulah gh met property.uud ajilladggui bhnee. tmees havsarsn utga herg blno - display: inline-block; bolgn uurchlnu */
+    display: inline-block;
+    width: 32%;
+    /* Uul n 3 box maani yg daraallan bairlh ystoi btal 32% dr 20px padding automataar nemgdeed 100%aas hetersn uchir 3 iin 2 box n daraallalaa - so box-sizing: border-box; nemj ugsnuur perfect blno */
+    box-sizing: border-box;
+ background: #f4f4f4; 
+ padding: 20px;
+ margin-bottom: 15px;
+ /* inggej hiisnii dra div uuruu block el uchraas dooshoo tsuvrana so inline buyu hoishoo horizontal bairluulahiin tuld - deer display: inline gej bichtel width bln margin-bottom n ajillahaa bolichhloo so read the top part*/
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Market</a></li>
+    </ul>
+    <br>
+    <br>
+
+    <img src="/image/pngtree-pink-watercolor-brushes-171474-png-image_1733978.jpeg" alt="pink line">
+
+    <br><br>
+
+    <div class="box">
+        <h3>Garchig</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt impedit quibusdam, nostrum debitis voluptatibus iste aperiam modi sunt velit?</p>
+    </div>
+    <div class="box">
+        <h3>Garchig</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt impedit quibusdam, nostrum debitis voluptatibus iste aperiam modi sunt velit?</p>
+    </div>
+    <div class="box">
+        <h3>Garchig</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt impedit quibusdam, nostrum debitis voluptatibus iste aperiam modi sunt velit?</p>
+    </div>
+    
+</body>
+</html>
